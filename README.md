@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
+## To-do list
+
+-	Web address that is a sub-domain from willandvillagehall.org.uk (this way there is no additional hosting cost) the address can be something.willandvillagehall.org.uk
+-	Email on that same domain, treasurer@something.willandvillagehall.org.uk
+-	Home page with "about us section"
+-	Advertisement for the next coffee morning
+-	Flower show programme
+-	Complete schedule/application document hosted
+-	Gallery of photos
+-	A list of contacts should you want that
+-	Compatibility with mobile devices
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
