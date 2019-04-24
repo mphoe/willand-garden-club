@@ -1,6 +1,11 @@
 @import './variables.scss';
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
   body {
     background-color: $background-color;
+    }
+
+    a {
+      color: darken($color: $brand-color, $amount: 10)
     }

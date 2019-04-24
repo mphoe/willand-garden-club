@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Contacts</h3>
+      <div class="contact-list">
+        <div *ngFor="let contact of contacts" class="contact-entry">
+          <h4>{{contact.name}}</h4>
+          <div *ngIf="contact.phone" class="contact-line">
+              <i class="fas fa-phone fa-fw"></i><a  href="tel:{{contact.phone}}"> {{contact.phone}}</a>
+          </div>
+          <div *ngIf="contact.email" class="contact-line">
+              <i class="fas fa-envelope fa-fw"></i>  <a  href="mailto:{{contact.email}}"> {{contact.email}}</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
