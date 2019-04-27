@@ -4,9 +4,7 @@
 
 export const environment = {
   production: false,
-  PUBLIC_URL: 'http://localhost:4200',
-  isFun: true,
-    wordApiKey: "e3b0198214229ddb7339ad581f50a97e13e8eff58c6e41877"
+  PUBLIC_URL: 'http://192.168.0.68:4200'
 };
 
 /*

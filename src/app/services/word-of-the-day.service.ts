@@ -14,7 +14,7 @@ export class WordOfTheDayService {
    */
   fetchWordOfTheDay = (success) => {
 
-    const apiKey = this.dataService.fetchEnvironment().wordApiKey;
+    const apiKey = this.dataService.fetchConfig().wordApiKey;
 
     fetch(`https://api.wordnik.com/v4/words.json/wordOfTheDay?api_key=${apiKey}`)
       .then((response) => {

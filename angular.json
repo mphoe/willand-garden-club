@@ -62,7 +62,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "garden-club:build"
+            "browserTarget": "garden-club:build",
+            "host": "0.0.0.0",
+            "disableHostCheck": true,
+            "open": true
           },
           "configurations": {
             "production": {

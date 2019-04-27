@@ -1,5 +1,6 @@
 {
   "extends": "../tslint.json",
+  "compilerOptions": {  "resolveJsonModule": true, "esModuleInterop": true },
   "rules": {
     "directive-selector": [
       true,
@@ -13,5 +14,5 @@
       "app",
       "kebab-case"
     ]
-  }
+  },
 }

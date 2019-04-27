@@ -20,7 +20,7 @@ export class FooterComponent implements OnInit {
    }
 
   ngOnInit() {
-      this.isFun = this.dataService.fetchEnvironment().isFun;
+      this.isFun = this.dataService.fetchConfig().isFun;
       if (this.isFun) {
         this.wordOfTheDayService.fetchWordOfTheDay((resp) => {
           this.wotd = resp;
