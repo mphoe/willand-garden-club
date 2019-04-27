@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import ImageConfig from '../../assets/images/imageMeta.json';
 
 @Component({
   selector: 'app-image-carousel',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageCarouselComponent implements OnInit {
 
-  public images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+  public images = ImageConfig;
+  public displayCaption: boolean = true;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleCaption() {
+    this.displayCaption = !this.displayCaption;
   }
 }

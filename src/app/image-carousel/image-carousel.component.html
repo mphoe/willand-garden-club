@@ -1,23 +1,9 @@
-<ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <img [src]="images[0]" alt="Random first slide">
-    <div class="carousel-caption">
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[1]" alt="Random second slide">
-    <div class="carousel-caption">
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <img [src]="images[2]" alt="Random third slide">
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </div>
-  </ng-template>
+<ngb-carousel [showNavigationIndicators]="false" [interval]="0" *ngIf="images">
+    <ng-template ngbSlide *ngFor="let image of images">
+      <img onError="this.className='broken-image';" (click)="toggleCaption()" class="carousel-image" src="../../assets/images/{{image.filename}}" alt="Random first slide">
+      <div *ngIf="displayCaption" class="carousel-caption d-none d-md-block " >
+        <h4>{{image.title}}</h4>
+        <span>{{image.description}}</span>
+      </div>
+    </ng-template>
 </ngb-carousel>
