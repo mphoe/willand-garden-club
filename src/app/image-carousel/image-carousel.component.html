@@ -1,7 +1,7 @@
 <ngb-carousel [showNavigationIndicators]="false" [interval]="0" *ngIf="images">
     <ng-template ngbSlide *ngFor="let image of images">
       <img onError="this.className='broken-image';" (click)="toggleCaption()" class="carousel-image" src="../../assets/images/{{image.filename}}" alt="Random first slide">
-      <div *ngIf="displayCaption" class="carousel-caption d-none d-md-block " >
+      <div *ngIf="displayCaption" class="carousel-caption d-none d-sm-block " >
         <h4>{{image.title}}</h4>
         <span>{{image.description}}</span>
       </div>
