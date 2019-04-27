@@ -1,35 +1,28 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-
+<div class="body-main">
   <app-navbar></app-navbar>
-  <div class="container">
-    <h1>
-      Welcome to {{ title }}!
-    </h1>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">About Us</h3>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-              leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-              release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-              software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="page container-fluid">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">About Us</h3>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+          <div class="card">
+            <app-image-carousel></app-image-carousel>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <app-contacts></app-contacts>
+        <div class="col-lg-4">
+          <app-contacts></app-contacts>
+        </div>
       </div>
     </div>
-  </div>
-
-
-
-  <router-outlet></router-outlet>
-
+    <router-outlet></router-outlet>
+</div>
   <app-footer></app-footer>
