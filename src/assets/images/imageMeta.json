@@ -1,16 +1,15 @@
 [
   {
     "filename": "IMAG0108.jpg",
-    "title": "Some Title this is",
-    "description": "This sure is one lovely image"
+    "title": "A countryside road",
+    "description": "This road leads away from a local manorhouse. You can walk literally forever and not escape the grasp of His Lordship."
   },
   {
     "filename": "IMAG0109.jpg",
-    "title": "Another Image Title"
+    "description": "All I have is a description, but what a description that is. this is a picture of some lovely cows"
   },
   {
     "filename": "IMAG0702.jpg",
-    "title": "The Third",
-    "description": "This sure is one lovely image"
+    "title": "Image of Flowers"
   }
 ]

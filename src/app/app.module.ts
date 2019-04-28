@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { TopLinksComponent } from './top-links/top-links.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     NavbarComponent,
     FooterComponent,
     ContactsComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    TopLinksComponent
   ],
   imports: [
     NgbModule,

@@ -1,6 +1,7 @@
 .body-main {
   div.page {
     margin: 1rem 0;
+    height: -webkit-fill-available;
   }
   .row > div {
     padding-bottom: 1rem;
