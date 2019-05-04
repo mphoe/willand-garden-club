@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Contact } from '../contact';
 import Config from '../../assets/data/config.json';
 import Contacts from '../../assets/data/contacts.json';
+import Coffee from '../../assets/data/coffeeTimes.json';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,9 @@ export class DataService {
 
   public fetchContacts(): Contact[] {
     return Contacts;
+  }
+
+  public fetchCoffee(): string[] {
+    return Coffee;
   }
 }

@@ -6,13 +6,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 -	Web address that is a sub-domain from willandvillagehall.org.uk (this way there is no additional hosting cost) the address can be something.willandvillagehall.org.uk
 -	Email on that same domain, treasurer@something.willandvillagehall.org.uk
--	Home page with "about us section"
--	Advertisement for the next coffee morning
+-	Home page with "about us section"  DONE
+-	Advertisement for the next coffee morning DONE
 -	Flower show programme
 -	Complete schedule/application document hosted
 -	Gallery of photos
--	A list of contacts should you want that
--	Compatibility with mobile devices
+-	A list of contacts should you want that DONE
+-	Compatibility with mobile devices DONE ALWAYS
 
 ## Development server
 

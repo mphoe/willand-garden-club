@@ -1,0 +1,15 @@
+:host {
+  .blurb {
+    margin-bottom: 2rem;
+  }
+  .coffee-time-display {
+    display: flex;
+    i {
+      flex: 1;
+    }
+    span {
+      flex: 4;
+      text-align: center;
+    }
+  }
+}

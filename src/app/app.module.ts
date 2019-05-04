@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { TopLinksComponent } from './top-links/top-links.component';
+import { CoffeeClubComponent } from './coffee-club/coffee-club.component';
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import { TopLinksComponent } from './top-links/top-links.component';
     FooterComponent,
     ContactsComponent,
     ImageCarouselComponent,
-    TopLinksComponent
+    TopLinksComponent,
+    CoffeeClubComponent
   ],
   imports: [
     NgbModule,
+    MomentModule,
     BrowserModule,
     AppRoutingModule
   ],
