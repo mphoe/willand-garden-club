@@ -4,4 +4,5 @@ export class Config {
   flickrApiKey: string;
   flickrSecret: string;
   flickrGalleryId: string;
+  links: any;
 }
