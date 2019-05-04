@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import ImageConfig from '../../assets/images/imageMeta.json';
+import { PhotoServiceService } from '../services/photo-service.service.js';
+import { Photo } from '../flickr-data.js';
 
 @Component({
   selector: 'app-image-carousel',
@@ -8,11 +9,18 @@ import ImageConfig from '../../assets/images/imageMeta.json';
 })
 export class ImageCarouselComponent implements OnInit {
 
-  public images = ImageConfig;
+  public images: Photo[];
   public displayCaption: boolean = true;
-  constructor() { }
+  constructor(private photoService: PhotoServiceService) { }
 
   ngOnInit() {
+    this.observePhotos();
+  }
+
+  private observePhotos() {
+    this.photoService.getPhotos().subscribe((data) => {
+      this.images = this.photoService.processPhotos(data);
+    })
   }
 
   toggleCaption() {
