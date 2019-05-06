@@ -1,5 +1,16 @@
 @import '../../variables.scss';
 
+
+:host {
+  .link-list {
+    display: flex;
+    align-content: center;
+    a {
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
 .navbar {
   background-color: $brand-color;
 }
