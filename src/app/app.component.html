@@ -1,38 +1,7 @@
 <div class="body-main">
   <app-navbar></app-navbar>
   <div class="page container-fluid">
-    <div class="row">
-      <div class="col-lg-8">
-        <div class="card col-sm">
-          <div class="card-body">
-            <h2 class="card-title">About Us</h2>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-              leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-              the
-              release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-              software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title sr-only">Useful Links</h2>
-            <div class="row text-center">
-              <a class="col-sm-6" href="{{flowerShowLink}}">Flower Show Programme</a>
-              <a class="col-sm-6" href="{{scheduleLink}}">The schedule</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <app-image-carousel></app-image-carousel>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <app-coffee-club></app-coffee-club>
-        <app-contacts></app-contacts>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
     <app-footer class="d-none d-lg-block"></app-footer>
   </div>
 </div>

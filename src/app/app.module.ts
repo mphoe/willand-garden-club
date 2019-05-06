@@ -10,6 +10,10 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { CoffeeClubComponent } from './coffee-club/coffee-club.component';
 import { MomentModule } from 'ngx-moment';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { MomentModule } from 'ngx-moment';
     FooterComponent,
     ContactsComponent,
     ImageCarouselComponent,
-    CoffeeClubComponent
+    CoffeeClubComponent,
+    PageNotFoundComponent,
+    HomePageComponent,
+    GalleryPageComponent,
+    AboutUsCardComponent
   ],
   imports: [
     NgbModule,
