@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { Config } from '../config';
 
 @Component({
   selector: 'app-home-page',
@@ -8,11 +9,15 @@ import { DataService } from '../services/data.service';
 })
 export class HomePageComponent {
 
+  public config: Config;
   public flowerShowLink: string;
   public scheduleLink: string;
 
   constructor(private dataService: DataService) {
-    this.flowerShowLink = dataService.fetchConfig().links.flowerShowLink;
-    this.scheduleLink = dataService.fetchConfig().links.scheduleLink;
+    dataService.fetchConfig().subscribe((config) => {
+      this.config = config;
+      this.flowerShowLink = config.links.flowerShowLink;
+      this.scheduleLink = config.links.scheduleLink;
+    });
   }
 }

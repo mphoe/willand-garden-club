@@ -14,7 +14,9 @@ export class ContactsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.contacts = this.dataService.fetchContacts();
+    this.dataService.fetchContact().subscribe((contacts) => {
+      this.contacts = contacts;
+    });
   }
 
 }

@@ -1,25 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, SimpleChanges, OnChanges } from '@angular/core';
 import { PhotoServiceService } from '../services/photo-service.service';
 import { Photo } from '../flickr-data';
+import { Config } from '../config';
 
 @Component({
   selector: 'app-about-us-card',
   templateUrl: './about-us-card.component.html',
   styleUrls: ['./about-us-card.component.scss']
 })
-export class AboutUsCardComponent implements OnInit {
+export class AboutUsCardComponent implements OnChanges {
+
+  @Input() config: Config;
 
   public image: Photo;
+  public hasImage: boolean = false;
   public displayCaption: boolean = true;
   constructor(private photoService: PhotoServiceService) { }
 
-  ngOnInit() {
-    this.observePhotos();
+  ngOnChanges(changes: SimpleChanges): void {
+    if(changes.config.currentValue) {
+      this.observePhotos();
+    }
   }
 
   private observePhotos() {
-    this.photoService.getPhotos().subscribe((data) => {
+    this.photoService.getPhotos(this.config).subscribe((data) => {
       this.image = this.photoService.processPhotos(data)[0];
+      this.hasImage = true;
     })
   }
 }

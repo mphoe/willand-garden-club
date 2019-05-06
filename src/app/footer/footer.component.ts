@@ -15,17 +15,17 @@ export class FooterComponent implements OnInit {
     definitions:  []
   };
 
-  constructor(private dataService: DataService, private wordOfTheDayService: WordOfTheDayService) {
-
-   }
+  constructor(private dataService: DataService, private wordOfTheDayService: WordOfTheDayService) {   }
 
   ngOnInit() {
-      this.isFun = this.dataService.fetchConfig().isFun;
-      if (this.isFun) {
-        this.wordOfTheDayService.fetchWordOfTheDay((resp) => {
-          this.wotd = resp;
-        });
-      }
+      this.dataService.fetchConfig().subscribe((data) => {
+        this.isFun = data.isFun;
+        if (this.isFun) {
+          this.wordOfTheDayService.fetchWordOfTheDay(data, (resp) => {
+            this.wotd = resp;
+          });
+        }
+      });
   }
 
 }

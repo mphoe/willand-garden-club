@@ -1,5 +1,5 @@
 <div class="card">
-  <img onError="this.className='broken-image';" class="card-img-top" src="{{image.url}}" alt="{{image.title}}">
+  <img *ngIf="hasImage" onError="this.className='broken-image';" class="card-img-top" src="{{image.url}}" alt="{{image.title}}">
     <div class="card-body">
       <h2 class="card-title">About Us</h2>
       <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum

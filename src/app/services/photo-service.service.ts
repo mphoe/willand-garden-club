@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, flatMap } from 'rxjs/operators';
 import { FlickrData, FlickrResp, Photo } from '../flickr-data';
 
 @Injectable({
@@ -11,21 +11,16 @@ import { FlickrData, FlickrResp, Photo } from '../flickr-data';
 export class PhotoServiceService {
 
   public galleryId: string;
-  private apiKey: string;
-  private secret: string;
+  private url: string;
 
   private flickrBaseUrl: string = "https://api.flickr.com/services/rest/?method=";
   private getPhotosUrl: string = "flickr.galleries.getPhotos";
 
-  constructor(dataService: DataService, private http: HttpClient) {
-    const config = dataService.fetchConfig();
-    this.galleryId = config.flickrGalleryId;
-    this.apiKey = config.flickrApiKey;
-    this.secret = config.flickrSecret;
+  constructor(private dataService: DataService, private http: HttpClient) {
    }
 
-   private buildUrl(): string {
-     return `${this.flickrBaseUrl}${this.getPhotosUrl}&api_key=${this.apiKey}&gallery_id=${this.galleryId}&format=json&nojsoncallback=1`;
+   private buildUrl(config): string {
+       return `${this.flickrBaseUrl}${this.getPhotosUrl}&api_key=${config.flickrApiKey}&gallery_id=${config.flickrGalleryId}&format=json&nojsoncallback=1`;
    }
 
    /**
@@ -43,10 +38,10 @@ export class PhotoServiceService {
      });
    }
 
-   public getPhotos(): Observable<FlickrData> {
-    return this.http.get(this.buildUrl()).pipe(map((data: FlickrResp) => {
-      return data.photos;
-    }));
+   public getPhotos(config): Observable<FlickrData> {
+      return this.http.get(this.buildUrl(config)).pipe(map((data: FlickrResp) => {
+        return data.photos;
+      }));
    }
 
 }
