@@ -10,22 +10,23 @@ import { WordOfTheDayService } from '../services/word-of-the-day.service';
 export class FooterComponent implements OnInit {
 
   public isFun: boolean = true;
+  public expanded: boolean = false;
   public wotd: any = {
     word: undefined,
-    definitions:  []
+    definitions: []
   };
 
-  constructor(private dataService: DataService, private wordOfTheDayService: WordOfTheDayService) {   }
+  constructor(private dataService: DataService, private wordOfTheDayService: WordOfTheDayService) { }
 
   ngOnInit() {
-      this.dataService.fetchConfig().subscribe((data) => {
-        this.isFun = data.isFun;
-        if (this.isFun) {
-          this.wordOfTheDayService.fetchWordOfTheDay(data, (resp) => {
-            this.wotd = resp;
-          });
-        }
-      });
+    this.dataService.fetchConfig().subscribe((data) => {
+      this.isFun = data.isFun;
+      if (this.isFun) {
+        this.wordOfTheDayService.fetchWordOfTheDay(data, (resp) => {
+          this.wotd = resp;
+        });
+      }
+    });
   }
 
 }

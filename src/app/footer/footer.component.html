@@ -1,16 +1,18 @@
 <footer class="footer">
   <div class="container-fluid">
-  <div class="m-2">
-          <div *ngIf="isFun">
-            <b>Word of the day is: </b>
-            <dl><dt>{{wotd.word}}</dt>
-              <dd *ngFor="let def of wotd.definitions">{{def.text}}</dd>
-              </dl>
-            </div>
-        <p> <a class="badge badge-light" rel="noopener noreferrer"
-          target="_blank" href="mailto:michaelpaulhoe+willandvillagehall@gmail.com">
+    <div class="m-2">
+      <div *ngIf="isFun" class="m-2">
+        <b>Word of the day is {{wotd.word | uppercase}} </b>
+        <span>-</span> <a href="#" class="definition-btn" (click)="expanded = !expanded">
+          {{(expanded)? "Hide" : "Show"}} definitions</a>
+        <ul *ngIf="expanded" class="list-unstyled">
+          <li *ngFor="let def of wotd.definitions">{{def.text}}</li>
+        </ul>
+      </div>
+      <p> <a class="badge badge-light" rel="noopener noreferrer" target="_blank"
+          href="mailto:michaelpaulhoe+willandvillagehall@gmail.com">
           Website built by Michael Hoe
         </a></p>
-        </div>
-        </div>
-  </footer>
+    </div>
+  </div>
+</footer>
