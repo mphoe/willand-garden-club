@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Config } from '../config';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-gallery-page',
   templateUrl: './gallery-page.component.html',
   styleUrls: ['./gallery-page.component.scss']
 })
-export class GalleryPageComponent implements OnInit {
+export class GalleryPageComponent {
 
-  constructor() { }
+  public config: Config;
 
-  ngOnInit() {
+  constructor(private dataService: DataService) {
+    dataService.fetchConfig().subscribe((config) => {
+      this.config = config;
+    });
   }
-
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, ModuleWithComponentFactories } from '@angular/core';
 import { DataService } from '../services/data.service';
 import moment from 'moment';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-coffee-club',
@@ -14,18 +15,12 @@ export class CoffeeClubComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.nextMeeting = this.getNextMeeting();
-  }
+    this.dataService.fetchCoffee().subscribe((allTimes) => {
+      let momMeetingTimes: moment.Moment[] = allTimes.map( (time: string) => moment(time, "DD/MM/YYYY"));
+      let futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter( time => time.isAfter());
 
-  private getNextMeeting(): moment.Moment {
-
-    let allMeetingTimes: string[] = this.dataService.fetchCoffee();
-
-    let momMeetingTimes: moment.Moment[] = allMeetingTimes.map( (time: string) => moment(time, "DD/MM/YYYY"));
-    let futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter( time => time.isAfter());
-
-    return futureMeetingTimes[0];
-
+      this.nextMeeting = futureMeetingTimes[0];
+    });
   }
 
 }

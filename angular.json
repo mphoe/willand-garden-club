@@ -24,7 +24,10 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              { "glob": "config.json", "input": "./", "output": "./assets/" },
+              { "glob": "coffeeTimes.json", "input": "./", "output": "./assets/" },
+              { "glob": "contacts.json", "input": "./", "output": "./assets/" }
             ],
             "styles": [
               "src/styles.scss"
