@@ -1,6 +1,14 @@
 <div class="row">
   <div class="col-12">
     <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Welcome to the Gallery</h5>
+        <p class="card-text">Below is a slideshow of images taken by Garden Club members.
+          If you'd prefer, you can view the pictures <a target="_blank" rel="noreferrer"
+            href="https://www.flickr.com/photos/flickr/galleries/{{config.flickrGalleryId}}">On Flickr</a></p>
+      </div>
+    </div>
+    <div class="card">
       <app-image-carousel [config]=config></app-image-carousel>
     </div>
   </div>

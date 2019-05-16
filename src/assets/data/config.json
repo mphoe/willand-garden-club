@@ -1,11 +1,11 @@
 {
-    "isFun": true,
-    "wordApiKey": "e3b0198214229ddb7339ad581f50a97e13e8eff58c6e41877",
-    "flickrApiKey": "412f5030e0626a17b565dd49903efb9a",
-    "flickrSecret": "9ee2ad11571eae6f",
-    "flickrGalleryId": "66911286-72157647277042064",
-    "links": {
-      "flowerShowLink": "/",
-      "scheduleLink": "/"
-    }
+  "isFun": true,
+  "wordApiKey": "e3b0198214229ddb7339ad581f50a97e13e8eff58c6e41877",
+  "flickrApiKey": "412f5030e0626a17b565dd49903efb9a",
+  "flickrSecret": "9ee2ad11571eae6f",
+  "flickrGalleryId": "72157647277042064",
+  "links": {
+    "flowerShowLink": "/",
+    "scheduleLink": "/"
+  }
 }
