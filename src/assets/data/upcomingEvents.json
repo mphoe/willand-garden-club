@@ -1,5 +1,40 @@
 [
   {
+    "name": "Amazing Plants",
+    "date": "13/03/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Chris Allen"
+  },
+  {
+    "name": "Coffee Morning",
+    "date": "23/03/2019",
+    "time": "tba",
+    "description": "Semi Annual Coffee Morning! Come and join us for Coffee",
+    "icon": "coffee",
+    "location": ""
+  },
+  {
+    "name": "Two Moors Way",
+    "date": "10/04/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "",
+    "location": "",
+    "contact": "Simon Dell"
+  },
+  {
+    "name": "Flower Arranging Demo",
+    "date": "08/05/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Tim Nicholls"
+  },
+  {
     "name": "Plant Sale",
     "date": "25/05/2019",
     "time": "10.00-11.00",
@@ -31,9 +66,9 @@
     "date": "11/09/2019",
     "time": "tba",
     "description": "",
-    "icon": "calendar-day",
+    "icon": "",
     "location": "",
-    "contact": "Jeremy Wilsor"
+    "contact": "Jeremy Wilson"
   },
   {
     "name": "Coffee Morning",
@@ -66,7 +101,7 @@
     "date": "11/12/2019",
     "time": "tba",
     "description": "Festive Fun - test your wits while enjoying seasonal treats",
-    "icon": "calendar-day",
+    "icon": "",
     "location": "",
     "contact": "AGM"
   }

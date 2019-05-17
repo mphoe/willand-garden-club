@@ -1,5 +1,5 @@
-<div class="card col-12">
-  <div class="card-icon text-center"><span class="fas fa-{{event.icon}}"></span></div>
+<div class="card col-12 {{(inFuture) ? 'future-event' : 'past-event'}}">
+  <div class="card-icon text-center"><span class="fas fa-{{(event.icon) ? event.icon : 'calendar-day'}}"></span></div>
   <div class="card-body">
     <h4 class="card-title h5">{{event.name}}</h4>
     <span>{{event.time}} - {{event.date}}</span>

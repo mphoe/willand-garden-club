@@ -7,7 +7,6 @@
     padding: 0;
     .card-icon {
       flex: 1;
-      background: $brand-color;
       span.fas {
         margin: 1rem 0;
         color: white;
@@ -15,6 +14,17 @@
     }
     .card-body {
       flex: 8;
+    }
+  }
+  .past-event .card-icon {
+    background: grey;
+  }
+  .future-event {
+    &.card {
+      border-color: $brand-color;
+    }
+    .card-icon {
+      background: $brand-color;
     }
   }
 }
