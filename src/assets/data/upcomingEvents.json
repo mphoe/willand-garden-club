@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Plant Sale",
+    "date": "25/05/2019",
+    "time": "10.00-11.00",
+    "location": "Willand Village Hall",
+    "description": "Draw, Refreshments, Stalls, Cakes. Coffee Included.",
+    "price": "£1.00",
+    "icon": "store"
+  },
+  {
+    "name": "St Fagan's Welsh National Folk Museum",
+    "date": "12/06/2019",
+    "time": "Leaving Willand at 9:30am",
+    "description": "Picking up in Sampford Peverell",
+    "location": "Cardiff, Wales",
+    "price": "£15.00",
+    "contact": "Mrs Allan - 01884 33828",
+    "icon": "landmark"
+  }
+]

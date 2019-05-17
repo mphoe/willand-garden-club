@@ -1,0 +1,26 @@
+<h2>Upcoming Events</h2>
+<div class="event-container">
+  <div *ngFor="let event of upcomingEvents" class="card col-12">
+    <div class="card-icon text-center"><span class="fas fa-{{event.icon}}"></span></div>
+    <div class="card-body">
+      <h3 class="card-title h5">{{event.name}}</h3>
+      <span>{{event.time}} - {{event.date}}</span>
+      <hr />
+      <p class="card-text">{{event.description}}</p>
+      <dl class="row">
+        <ng-container *ngIf="event.location">
+          <dt class="col-sm-3">Location</dt>
+          <dd class="col-sm-9">{{event.location}}</dd>
+        </ng-container>
+        <ng-container *ngIf="event.price">
+          <dt class="col-sm-3">Price</dt>
+          <dd class="col-sm-9">{{event.price}}</dd>
+        </ng-container>
+        <ng-container *ngIf="event.contact">
+          <dt class="col-sm-3">Contact</dt>
+          <dd class="col-sm-9">{{event.contact}}</dd>
+        </ng-container>
+      </dl>
+    </div>
+  </div>
+</div>
