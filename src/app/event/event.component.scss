@@ -16,8 +16,11 @@
       flex: 8;
     }
   }
-  .past-event .card-icon {
-    background: grey;
+  .past-event {
+    color: #777;
+    .card-icon {
+      background: grey;
+    }
   }
   .future-event {
     &.card {

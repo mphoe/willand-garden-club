@@ -1,6 +1,10 @@
 <h2>Upcoming Events</h2>
+<p>The next two events on our schedule</p>
 <div class="row">
   <div class="col-12 col-xl-6" *ngFor="let event of upcomingEvents">
     <app-event [event]="event"></app-event>
+  </div>
+  <div class="col-12">
+    <a class="col-12 btn btn-primary" routerLink="/events">See All Events</a>
   </div>
 </div>

@@ -5,7 +5,7 @@
       <p class="card-text">Below is a full list of our year's events. Past events will be greyed out.</p>
     </div>
   </div>
-  <div *ngFor="let event of upcomingEvents">
+  <div class="col-12" *ngFor="let event of upcomingEvents">
     <app-event [event]="event"></app-event>
   </div>
 </div>
