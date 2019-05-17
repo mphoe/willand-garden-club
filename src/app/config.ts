@@ -7,7 +7,7 @@ export class Config {
   flowerShow: flowerShow;
 }
 
-export interface flowerShow {
+export class flowerShow {
   link: string;
   date: string;
 }

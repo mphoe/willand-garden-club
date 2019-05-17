@@ -1,4 +1,6 @@
 <h2>Upcoming Events</h2>
-<div *ngFor="let event of upcomingEvents">
-  <app-event [event]="event"></app-event>
+<div class="row">
+  <div class="col-12 col-xl-6" *ngFor="let event of upcomingEvents">
+    <app-event [event]="event"></app-event>
+  </div>
 </div>

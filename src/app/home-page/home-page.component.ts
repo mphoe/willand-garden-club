@@ -10,7 +10,7 @@ import { Config, flowerShow } from '../config';
 export class HomePageComponent {
 
   public config: Config;
-  public flowerShow: flowerShow;
+  public flowerShow: flowerShow = new flowerShow();
 
   constructor(private dataService: DataService) {
     dataService.fetchConfig().subscribe((config) => {
