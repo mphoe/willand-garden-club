@@ -15,6 +15,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
 import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.compo
     HomePageComponent,
     GalleryPageComponent,
     AboutUsCardComponent,
-    UpcomingEventsComponent
+    UpcomingEventsComponent,
+    EventComponent
   ],
   imports: [
     NgbModule,

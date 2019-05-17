@@ -17,5 +17,57 @@
     "price": "£15.00",
     "contact": "Mrs Allan - 01884 33828",
     "icon": "landmark"
+  },
+  {
+    "name": "Flower Show at Willand",
+    "date": "10/07/2019",
+    "time": "tba",
+    "description": "The Willand Flowershow",
+    "icon": "leaf",
+    "location": "Willand"
+  },
+  {
+    "name": "Blood Sweat and Tea",
+    "date": "11/09/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "calendar-day",
+    "location": "",
+    "contact": "Jeremy Wilsor"
+  },
+  {
+    "name": "Coffee Morning",
+    "date": "14/09/2019",
+    "time": "tba",
+    "description": "Semi Annual Coffee Morning! Come and join us for Coffee",
+    "icon": "coffee",
+    "location": ""
+  },
+  {
+    "name": "DVD",
+    "date": "09/10/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "film",
+    "location": "",
+    "contact": "Eira Brown"
+  },
+  {
+    "name": "Wildlife Gardening",
+    "date": "13/11/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Becca Flintham"
+  },
+  {
+    "name": "Quiz, Mince Pies, Wine",
+    "date": "11/12/2019",
+    "time": "tba",
+    "description": "Festive Fun - test your wits while enjoying seasonal treats",
+    "icon": "calendar-day",
+    "location": "",
+    "contact": "AGM"
   }
 ]
