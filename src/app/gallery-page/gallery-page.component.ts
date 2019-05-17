@@ -9,7 +9,7 @@ import { DataService } from '../services/data.service';
 })
 export class GalleryPageComponent {
 
-  public config: Config;
+  public config: Config = new Config();
 
   constructor(private dataService: DataService) {
     dataService.fetchConfig().subscribe((config) => {

@@ -18,7 +18,7 @@ export class ImageCarouselComponent implements OnChanges {
 
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes.config) {
+    if (changes.config && changes.config.currentValue.flickrApiKey) {
       this.observePhotos();
     }
 
