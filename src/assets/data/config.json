@@ -4,8 +4,8 @@
   "flickrApiKey": "412f5030e0626a17b565dd49903efb9a",
   "flickrSecret": "9ee2ad11571eae6f",
   "flickrGalleryId": "72157647277042064",
-  "links": {
-    "flowerShowLink": "/",
-    "scheduleLink": "/"
+  "flowerShow": {
+    "link": "/assets/files/FlowerShow2019.docx",
+    "date": "11th of July"
   }
 }

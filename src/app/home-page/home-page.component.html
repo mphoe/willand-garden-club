@@ -6,13 +6,11 @@
   <div class="col-lg-4">
     <app-contacts></app-contacts>
     <div class="card">
-      <h4 class="card-header">Useful Links
+      <h4 class="card-header">Flower Show
       </h4>
       <div class="card-body">
-        <div class="row text-center">
-          <a class="col-12" href="{{flowerShowLink}}">Flower Show Programme</a>
-          <a class="col-12" href="{{scheduleLink}}">The schedule</a>
-        </div>
+        <p>The Willand Flower Show will be happening this year on the <b>{{flowerShow.date}}</b>!</p>
+        <a class="btn btn-primary col-12" href="{{flowerShow.link}}">Download Programme</a>
       </div>
     </div>
   </div>
