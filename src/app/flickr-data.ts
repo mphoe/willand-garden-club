@@ -4,8 +4,10 @@ export class FlickrResp {
 }
 
 export class FlickrData {
+  id: string;
   page: number;
   pages: number;
+  owner: string;
   perpage: number;
   photo: FlickrPhoto[];
   total: number;
