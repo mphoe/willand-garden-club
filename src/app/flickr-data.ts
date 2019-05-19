@@ -1,5 +1,5 @@
 export class FlickrResp {
-  photos: FlickrData;
+  photoset: FlickrData;
   stat: string;
 }
 

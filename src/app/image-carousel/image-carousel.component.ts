@@ -1,4 +1,4 @@
-import { Component, Input, SimpleChanges, OnChanges } from '@angular/core';
+import { Component, Input, SimpleChanges, OnChanges, ViewChild } from '@angular/core';
 import { PhotoServiceService } from '../services/photo-service.service.js';
 import { Photo } from '../flickr-data.js';
 import { Config } from 'protractor';
@@ -11,6 +11,7 @@ import { Config } from 'protractor';
 export class ImageCarouselComponent implements OnChanges {
 
   @Input() config: Config;
+  @ViewChild('carousel') carousel: any;
 
   public images: Photo[];
   public displayCaption: boolean = true;
@@ -28,9 +29,5 @@ export class ImageCarouselComponent implements OnChanges {
     this.photoService.getPhotos(this.config).subscribe((data) => {
       this.images = this.photoService.processPhotos(data);
     })
-  }
-
-  toggleCaption() {
-    this.displayCaption = !this.displayCaption;
   }
 }

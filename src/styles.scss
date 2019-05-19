@@ -17,10 +17,11 @@ a {
 
 .btn.btn-primary {
   background: $brand-color;
-  border: darken($color: $brand-color, $amount: 20);
+  border: darken($color: $brand-color, $amount: 15) 1px solid;
 
-  &:hover {
-    background: darken($color: $brand-color, $amount: 5);
+  &:hover,
+  &:active {
+    background: darken($color: $brand-color, $amount: 5) !important;
   }
 }
 
