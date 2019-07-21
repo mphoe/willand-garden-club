@@ -10,6 +10,7 @@ export class FlickrData {
   owner: string;
   perpage: number;
   photo: FlickrPhoto[];
+  primary: string;
   total: number;
 }
 

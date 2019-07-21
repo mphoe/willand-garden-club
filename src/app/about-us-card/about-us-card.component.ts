@@ -18,14 +18,15 @@ export class AboutUsCardComponent implements OnChanges {
   constructor(private photoService: PhotoServiceService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes.config.currentValue) {
+    if (changes.config.currentValue) {
       this.observePhotos();
     }
   }
 
   private observePhotos() {
     this.photoService.getPhotos(this.config).subscribe((data) => {
-      this.image = this.photoService.processPhotos(data)[0];
+      const primaryPhoto = data.photo.filter((photo) => photo.id == data.primary);
+      this.image = this.photoService.processPhotos(primaryPhoto)[0];
       this.hasImage = true;
     })
   }

@@ -9,7 +9,7 @@ import { Photo } from '../flickr-data.js';
 export class ImageCarouselComponent {
 
   @Input() images: Photo[];
-  @ViewChild('carousel') carousel: any;
+  @ViewChild('carousel', { static: false }) carousel: any;
 
   public displayCaption: boolean = true;
 

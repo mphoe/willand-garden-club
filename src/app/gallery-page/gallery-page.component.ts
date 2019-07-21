@@ -26,7 +26,7 @@ export class GalleryPageComponent {
   private observePhotos() {
     this.photoService.getPhotos(this.config).subscribe((data: FlickrData) => {
       this.galleryUrl = `${data.owner}/sets/${data.id}`;
-      this.images = this.photoService.processPhotos(data);
+      this.images = this.photoService.processPhotos(data.photo);
     })
   }
 }
