@@ -15,6 +15,16 @@ a {
   font-weight: bold;
 }
 
+.btn.btn-primary {
+  background: $brand-color;
+  border: darken($color: $brand-color, $amount: 15) 1px solid;
+
+  &:hover,
+  &:active {
+    background: darken($color: $brand-color, $amount: 5) !important;
+  }
+}
+
 .card {
   margin-bottom: 1rem;
 }

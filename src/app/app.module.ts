@@ -14,6 +14,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HomePageComponent } from './home-page/home-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
+import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { EventComponent } from './event/event.component';
+import { EventsPageComponent } from './events-page/events-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { AboutUsCardComponent } from './about-us-card/about-us-card.component';
     PageNotFoundComponent,
     HomePageComponent,
     GalleryPageComponent,
-    AboutUsCardComponent
+    AboutUsCardComponent,
+    UpcomingEventsComponent,
+    EventComponent,
+    EventsPageComponent
   ],
   imports: [
     NgbModule,

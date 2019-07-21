@@ -2,9 +2,9 @@
   <div class="container-fluid">
     <div class="m-2">
       <div *ngIf="isFun" class="m-2">
-        <b>Word of the day is {{wotd.word | uppercase}} </b>
-        <span>-</span> <a href="#footer" class="definition-btn" (click)="expanded = !expanded">
-          {{(expanded)? "Hide" : "Show"}} definitions</a>
+        <b class="mt-3">Word of the day is {{wotd.word | uppercase}} </b>
+        <button class="definition-btn btn btn-sm btn-light" (click)="expanded = !expanded">
+          {{(expanded)? "Hide" : "Show"}} definitions</button>
         <ul *ngIf="expanded" class="list-unstyled">
           <li *ngFor="let def of wotd.definitions">{{def.text}}</li>
         </ul>

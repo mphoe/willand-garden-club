@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Amazing Plants",
+    "date": "13/03/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Chris Allen"
+  },
+  {
+    "name": "Coffee Morning",
+    "date": "23/03/2019",
+    "time": "tba",
+    "description": "Semi Annual Coffee Morning! Come and join us for Coffee",
+    "icon": "coffee",
+    "location": ""
+  },
+  {
+    "name": "Two Moors Way",
+    "date": "10/04/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "",
+    "location": "",
+    "contact": "Simon Dell"
+  },
+  {
+    "name": "Flower Arranging Demo",
+    "date": "08/05/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Tim Nicholls"
+  },
+  {
+    "name": "Plant Sale",
+    "date": "25/05/2019",
+    "time": "10.00-11.00",
+    "location": "Willand Village Hall",
+    "description": "Draw, Refreshments, Stalls, Cakes. Coffee Included.",
+    "price": "£1.00",
+    "icon": "store"
+  },
+  {
+    "name": "St Fagan's Welsh National Folk Museum",
+    "date": "12/06/2019",
+    "time": "Leaving Willand at 9:30am",
+    "description": "Picking up in Sampford Peverell",
+    "location": "Cardiff, Wales",
+    "price": "£15.00",
+    "contact": "Mrs Allan - 01884 33828",
+    "icon": "landmark"
+  },
+  {
+    "name": "Flower Show at Willand",
+    "date": "10/07/2019",
+    "time": "tba",
+    "description": "The Willand Flowershow",
+    "icon": "leaf",
+    "location": "Willand"
+  },
+  {
+    "name": "Blood Sweat and Tea",
+    "date": "11/09/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "",
+    "location": "",
+    "contact": "Jeremy Wilson"
+  },
+  {
+    "name": "Coffee Morning",
+    "date": "14/09/2019",
+    "time": "tba",
+    "description": "Semi Annual Coffee Morning! Come and join us for Coffee",
+    "icon": "coffee",
+    "location": ""
+  },
+  {
+    "name": "DVD",
+    "date": "09/10/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "film",
+    "location": "",
+    "contact": "Eira Brown"
+  },
+  {
+    "name": "Wildlife Gardening",
+    "date": "13/11/2019",
+    "time": "tba",
+    "description": "",
+    "icon": "leaf",
+    "location": "",
+    "contact": "Becca Flintham"
+  },
+  {
+    "name": "Quiz, Mince Pies, Wine",
+    "date": "11/12/2019",
+    "time": "tba",
+    "description": "Festive Fun - test your wits while enjoying seasonal treats",
+    "icon": "",
+    "location": "",
+    "contact": "AGM"
+  }
+]

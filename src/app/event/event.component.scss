@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+:host {
+  .card {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    .card-icon {
+      flex: 1;
+      span.fas {
+        margin: 1rem 0;
+        color: white;
+      }
+    }
+    .card-body {
+      flex: 8;
+    }
+  }
+  .past-event {
+    color: #777;
+    .card-icon {
+      background: grey;
+    }
+  }
+  .future-event {
+    &.card {
+      border-color: $brand-color;
+    }
+    .card-icon {
+      background: $brand-color;
+    }
+  }
+}
