@@ -3,7 +3,7 @@ import { DataService } from './data.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, flatMap } from 'rxjs/operators';
-import { FlickrData, FlickrResp, Photo } from '../flickr-data';
+import { FlickrData, FlickrResp, Photo, FlickrPhoto } from '../flickr-data';
 
 @Injectable({
   providedIn: 'root'
@@ -30,8 +30,8 @@ export class PhotoServiceService {
    * @returns {Photo[]}
    * @memberof PhotoServiceService
    */
-  public processPhotos(photos: FlickrData): Photo[] {
-    return photos.photo.map((photo) => {
+  public processPhotos(photos: FlickrPhoto[]): Photo[] {
+    return photos.map((photo) => {
       //  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
       const url = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
       return new Photo(photo.id, url, photo.title);
