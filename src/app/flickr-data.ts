@@ -1,11 +1,13 @@
 export class FlickrResp {
-  photos: FlickrData;
+  photoset: FlickrData;
   stat: string;
 }
 
 export class FlickrData {
+  id: string;
   page: number;
   pages: number;
+  owner: string;
   perpage: number;
   photo: FlickrPhoto[];
   total: number;

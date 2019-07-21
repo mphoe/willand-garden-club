@@ -1,19 +1,19 @@
 <div class="card">
-  <div class="card-header">
-    <h2 class="h4">Contacts</h2>
-  </div>
-  <div class="card-body">
-    <div class="contact-list">
-      <div *ngFor="let contact of contacts" class="contact-entry">
-        <h4>{{contact.name}}</h4>
-        <div *ngIf="contact.phone" class="contact-line">
-          <i class="fas fa-phone fa-fw"></i><a href="tel:{{contact.phone}}"> {{contact.phone}}</a>
-        </div>
-        <div *ngIf="contact.email" class="contact-line">
-          <i class="fas fa-envelope fa-fw"></i> <a href="mailto:{{contact.email}}"> {{contact.email}}</a>
-        </div>
+  <h4 class="card-header">Contacts
+  </h4>
+  <ul class="list-group list-group-flush contact-list">
+    <li *ngFor="let contact of contacts" class="list-group-item contact-entry">
+      <h4>{{contact.title}}</h4>
+      <div class="contact-line">
+        <i class="fas fa-user fa-fw"></i><b>{{contact.name}}</b>
       </div>
+      <div *ngIf="contact.phone" class="contact-line ">
+        <i class="fas fa-phone fa-fw"></i><a href="tel:{{contact.phone}}"> {{contact.phone}}</a>
+      </div>
+      <div *ngIf="contact.email" class="contact-line text-truncate">
+        <i class="fas fa-envelope fa-fw"></i> <a href="mailto:{{contact.email}}"> {{contact.email}}</a>
+      </div>
+    </li>
 
-    </div>
-  </div>
+  </ul>
 </div>

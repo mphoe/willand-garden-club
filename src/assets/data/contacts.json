@@ -1,4 +1,10 @@
 [
-  { "name": "Carol Allan", "email": "gardenclub@willandvillagehall.org.uk", "phone": "0188433828" },
-  { "name": "Example Contact", "email": "nnnnaaaaah@gmail.com"}
+  { "title": "Chairman", "name": "K Deane", "phone": "01884 32652" },
+  {
+    "title": "Secretary",
+    "name": "Carol Allan",
+    "email": "gardenclub@willandvillagehall.org.uk",
+    "phone": "0188433828"
+  },
+  { "title": "Treasurer", "name": "R Brown", "phone": "01884 33632" }
 ]

@@ -1,18 +1,34 @@
 <div class="row">
-  <div class="col-lg-8">
+  <div class="col-lg-7">
     <app-about-us-card [config]=config></app-about-us-card>
+  </div>
+  <div class="col-lg-5">
     <div class="card">
+      <h4 class="card-header">Flower Show
+      </h4>
       <div class="card-body">
-        <h2 class="card-title sr-only">Useful Links</h2>
-        <div class="row text-center">
-          <a class="col-sm-6" href="{{flowerShowLink}}">Flower Show Programme</a>
-          <a class="col-sm-6" href="{{scheduleLink}}">The schedule</a>
+        <p>The Willand Flower Show will be happening this year on the <b>{{flowerShow.date}}</b>!</p>
+        <a class="btn btn-primary col-12" href="{{flowerShow.link}}">Download Programme</a>
+      </div>
+    </div>
+    <app-contacts></app-contacts>
+    <div class="card">
+      <h4 class="card-header">Membership
+      </h4>
+      <div class="card-body">
+        <div class="media">
+          <img class="align-self-start logo" src="../../assets/images/GardenClubLogo.png" alt="Garden Club Logo">
+          <div class="media-body">
+            Membership is £5 per annum and we ask visitors to pay £1 per meeting. Visitors are
+            always
+            welcome.
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-4">
-    <app-contacts></app-contacts>
-    <app-coffee-club></app-coffee-club>
+  <hr />
+  <div class="col-lg-12">
+    <app-upcoming-events></app-upcoming-events>
   </div>
 </div>
