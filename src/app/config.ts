@@ -4,10 +4,10 @@ export class Config {
   flickrApiKey: string;
   flickrSecret: string;
   flickrGalleryId: string;
-  flowerShow: flowerShow;
+  flowerShow: FlowerShow;
 }
 
-export class flowerShow {
+export class FlowerShow {
   link: string;
   date: string;
 }

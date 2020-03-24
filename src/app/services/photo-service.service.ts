@@ -13,22 +13,22 @@ export class PhotoServiceService {
   public galleryId: string;
   private url: string;
 
-  private flickrBaseUrl: string = "https://api.flickr.com/services/rest/?method=";
-  private getPhotosUrl: string = "flickr.photosets.getPhotos";
+  private flickrBaseUrl = 'https://api.flickr.com/services/rest/?method=';
+  private getPhotosUrl = 'flickr.photosets.getPhotos';
 
   constructor(private dataService: DataService, private http: HttpClient) {
   }
 
   private buildUrl(config): string {
-    return `${this.flickrBaseUrl}${this.getPhotosUrl}&api_key=${config.flickrApiKey}&photoset_id=${config.flickrGalleryId}&format=json&nojsoncallback=1`;
+    return `${this.flickrBaseUrl}${this.getPhotosUrl}&api_key=${config.flickrApiKey}` +
+      `&photoset_id=${config.flickrGalleryId}&format=json&nojsoncallback=1`;
   }
 
   /**
    * Return array of trimmed down photo objects
    *
-   * @param {FlickrData} photos
-   * @returns {Photo[]}
-   * @memberof PhotoServiceService
+   * @param photos data about the photo
+   * @returns an array of photos
    */
   public processPhotos(photos: FlickrPhoto[]): Photo[] {
     return photos.map((photo) => {

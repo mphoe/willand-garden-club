@@ -11,6 +11,6 @@ export class ImageCarouselComponent {
   @Input() images: Photo[];
   @ViewChild('carousel') carousel: any;
 
-  public displayCaption: boolean = true;
+  public displayCaption = true;
 
 }

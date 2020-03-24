@@ -15,7 +15,7 @@ export class UpcomingEventsComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.fetchUpcomingEvents().subscribe((events: UpcomingEvent[]) => {
-      const futureEvents = events.filter(event => moment(event.date, "DD/MM/YYYY").isAfter());
+      const futureEvents = events.filter(event => moment(event.date, 'DD/MM/YYYY').isAfter());
       this.upcomingEvents = futureEvents.slice(0, 2);
 
     });

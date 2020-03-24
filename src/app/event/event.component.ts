@@ -22,7 +22,7 @@ export class EventComponent implements OnInit {
   }
 
   isFutureEvent() {
-    this.inFuture = moment(this.event.date, "DD/MM/YYYY").isAfter();
+    this.inFuture = moment(this.event.date, 'DD/MM/YYYY').isAfter();
   }
 
 }

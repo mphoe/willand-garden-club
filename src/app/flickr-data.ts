@@ -20,7 +20,6 @@ export class FlickrData {
  * We only care about Id and Title
  *
  * @export
- * @class FlickrPhoto
  */
 export class FlickrPhoto {
   id: string;
@@ -29,6 +28,7 @@ export class FlickrPhoto {
   secret: string;
   server: string;
   farm: number;
+  // tslint:disable-next-line: variable-name
   has_comment: number;
 }
 

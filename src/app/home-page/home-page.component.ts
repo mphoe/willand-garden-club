@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DataService } from '../services/data.service';
-import { Config, flowerShow } from '../config';
+import { Config, FlowerShow } from '../config';
 
 @Component({
   selector: 'app-home-page',
@@ -10,7 +10,7 @@ import { Config, flowerShow } from '../config';
 export class HomePageComponent {
 
   public config: Config;
-  public flowerShow: flowerShow = new flowerShow();
+  public flowerShow: FlowerShow = new FlowerShow();
 
   constructor(private dataService: DataService) {
     dataService.fetchConfig().subscribe((config) => {

@@ -16,8 +16,8 @@ export class CoffeeClubComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.fetchCoffee().subscribe((allTimes) => {
-      let momMeetingTimes: moment.Moment[] = allTimes.map( (time: string) => moment(time, "DD/MM/YYYY"));
-      let futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter( time => time.isAfter());
+      const momMeetingTimes: moment.Moment[] = allTimes.map((time: string) => moment(time, 'DD/MM/YYYY'));
+      const futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter(time => time.isAfter());
 
       this.nextMeeting = futureMeetingTimes[0];
     });
