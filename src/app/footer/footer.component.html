@@ -1,7 +1,7 @@
 <footer id="footer" class="footer">
   <div class="container-fluid">
     <div class="m-2">
-      <div *ngIf="isFun" class="m-2">
+      <div *ngIf="isFun && this.displayWotd" class="m-2">
         <b class="mt-3">Word of the day is {{wotd.word | uppercase}} </b>
         <button class="definition-btn btn btn-sm btn-light" (click)="expanded = !expanded">
           {{(expanded)? "Hide" : "Show"}} definitions</button>
