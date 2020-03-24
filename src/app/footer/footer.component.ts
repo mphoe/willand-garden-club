@@ -15,6 +15,7 @@ export class FooterComponent implements OnInit {
     word: undefined,
     definitions: []
   };
+  displayWotd: boolean;
 
   constructor(private dataService: DataService, private wordOfTheDayService: WordOfTheDayService) { }
 
@@ -23,8 +24,12 @@ export class FooterComponent implements OnInit {
       this.isFun = data.isFun;
       if (this.isFun) {
         this.wordOfTheDayService.fetchWordOfTheDay(data, (resp) => {
+          this.displayWotd = true;
           this.wotd = resp;
-        });
+        },
+          () => {
+            this.displayWotd = false;
+          });
       }
     });
   }
