@@ -13,8 +13,8 @@ export class AboutUsCardComponent implements OnChanges {
   @Input() config: Config;
 
   public image: Photo;
-  public hasImage: boolean = false;
-  public displayCaption: boolean = true;
+  public hasImage = false;
+  public displayCaption = true;
   constructor(private photoService: PhotoServiceService) { }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -25,9 +25,9 @@ export class AboutUsCardComponent implements OnChanges {
 
   private observePhotos() {
     this.photoService.getPhotos(this.config).subscribe((data) => {
-      const primaryPhoto = data.photo.filter((photo) => photo.id == data.primary);
+      const primaryPhoto = data.photo.filter((photo) => photo.id === data.primary);
       this.image = this.photoService.processPhotos(primaryPhoto)[0];
       this.hasImage = true;
-    })
+    });
   }
 }

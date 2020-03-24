@@ -14,7 +14,7 @@ export class GalleryPageComponent {
   public config: Config = new Config();
   public images: Photo[];
   public galleryUrl: string;
-  public displayCaption: boolean = true;
+  public displayCaption = true;
 
   constructor(private photoService: PhotoServiceService, private dataService: DataService) {
     dataService.fetchConfig().subscribe((config) => {
@@ -27,6 +27,6 @@ export class GalleryPageComponent {
     this.photoService.getPhotos(this.config).subscribe((data: FlickrData) => {
       this.galleryUrl = `${data.owner}/sets/${data.id}`;
       this.images = this.photoService.processPhotos(data.photo);
-    })
+    });
   }
 }

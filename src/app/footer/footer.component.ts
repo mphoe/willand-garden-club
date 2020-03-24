@@ -9,8 +9,8 @@ import { WordOfTheDayService } from '../services/word-of-the-day.service';
 })
 export class FooterComponent implements OnInit {
 
-  public isFun: boolean = true;
-  public expanded: boolean = false;
+  public isFun = true;
+  public expanded = false;
   public wotd: any = {
     word: undefined,
     definitions: []
