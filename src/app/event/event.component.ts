@@ -7,13 +7,10 @@ import moment from 'moment';
   templateUrl: './event.component.html',
   styleUrls: ['./event.component.scss']
 })
-
 export class EventComponent implements OnInit {
-
   @Input() event: UpcomingEvent;
 
   public inFuture: boolean;
-
 
   constructor() { }
 
@@ -24,5 +21,4 @@ export class EventComponent implements OnInit {
   isFutureEvent() {
     this.inFuture = moment(this.event.date, 'DD/MM/YYYY').isAfter();
   }
-
 }

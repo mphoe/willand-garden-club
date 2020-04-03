@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UpcomingEventsComponent } from './upcoming-events.component';
+import { DataService } from '../services/data.service';
+import { DataServiceStub } from '../services/data.service.stub';
+import { MomentModule } from 'ngx-moment';
 
 describe('UpcomingEventsComponent', () => {
   let component: UpcomingEventsComponent;
@@ -8,9 +11,10 @@ describe('UpcomingEventsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UpcomingEventsComponent ]
-    })
-    .compileComponents();
+      declarations: [UpcomingEventsComponent],
+      imports: [MomentModule],
+      providers: [{ provide: DataService, useClass: DataServiceStub }]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
