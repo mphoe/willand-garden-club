@@ -1,12 +1,12 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GalleryPageComponent } from "./gallery-page.component";
-import { PhotoServiceService } from "../services/photo-service.service";
-import { PhotoServiceServiceStub } from "../services/photo-service.service.stub";
-import { DataService } from "../services/data.service";
-import { DataServiceStub } from "../services/data.service.stub";
+import { GalleryPageComponent } from './gallery-page.component';
+import { PhotoServiceService } from '../services/photo-service.service';
+import { PhotoServiceServiceStub } from '../services/photo-service.service.stub';
+import { DataService } from '../services/data.service';
+import { DataServiceStub } from '../services/data.service.stub';
 
-describe("GalleryPageComponent", () => {
+describe('GalleryPageComponent', () => {
   let component: GalleryPageComponent;
   let fixture: ComponentFixture<GalleryPageComponent>;
 
@@ -26,7 +26,7 @@ describe("GalleryPageComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

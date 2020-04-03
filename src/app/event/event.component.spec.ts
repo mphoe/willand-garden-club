@@ -1,10 +1,10 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EventComponent } from "./event.component";
-import { MomentModule } from "ngx-moment";
-import { UpcomingEvent } from "../upcoming-event";
+import { EventComponent } from './event.component';
+import { MomentModule } from 'ngx-moment';
+import { UpcomingEvent } from '../upcoming-event';
 
-describe("EventComponent", () => {
+describe('EventComponent', () => {
   let component: EventComponent;
   let fixture: ComponentFixture<EventComponent>;
 
@@ -16,11 +16,11 @@ describe("EventComponent", () => {
   }));
 
   const fakeDate: UpcomingEvent = {
-    name: "fake",
-    date: "12/04/2020",
-    time: "12:33",
-    description: "silly fake date",
-    icon: "landmark"
+    name: 'fake',
+    date: '12/04/2020',
+    time: '12:33',
+    description: 'silly fake date',
+    icon: 'landmark'
   };
 
   beforeEach(() => {
@@ -30,7 +30,7 @@ describe("EventComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

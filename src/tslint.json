@@ -6,7 +6,22 @@
     "allowSyntheticDefaultImports": true
   },
   "rules": {
-    "directive-selector": [true, "attribute", "app", "camelCase"],
-    "component-selector": [true, "element", "app", "kebab-case"]
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ]
   }
 }

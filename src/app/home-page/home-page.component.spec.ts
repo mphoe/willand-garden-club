@@ -1,11 +1,11 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomePageComponent } from "./home-page.component";
-import { DataService } from "../services/data.service";
-import { DataServiceStub } from "../services/data.service.stub";
-import { MomentModule } from "ngx-moment";
+import { HomePageComponent } from './home-page.component';
+import { DataService } from '../services/data.service';
+import { DataServiceStub } from '../services/data.service.stub';
+import { MomentModule } from 'ngx-moment';
 
-describe("HomePageComponent", () => {
+describe('HomePageComponent', () => {
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
@@ -23,7 +23,7 @@ describe("HomePageComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

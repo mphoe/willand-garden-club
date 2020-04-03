@@ -1,11 +1,11 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactsComponent } from "./contacts.component";
-import { DataService } from "../services/data.service";
-import { DataServiceStub } from "../services/data.service.stub";
-import { MomentModule } from "ngx-moment";
+import { ContactsComponent } from './contacts.component';
+import { DataService } from '../services/data.service';
+import { DataServiceStub } from '../services/data.service.stub';
+import { MomentModule } from 'ngx-moment';
 
-describe("ContactsComponent", () => {
+describe('ContactsComponent', () => {
   let component: ContactsComponent;
   let fixture: ComponentFixture<ContactsComponent>;
 
@@ -23,7 +23,7 @@ describe("ContactsComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

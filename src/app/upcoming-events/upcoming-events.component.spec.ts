@@ -1,11 +1,11 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UpcomingEventsComponent } from "./upcoming-events.component";
-import { DataService } from "../services/data.service";
-import { DataServiceStub } from "../services/data.service.stub";
-import { MomentModule } from "ngx-moment";
+import { UpcomingEventsComponent } from './upcoming-events.component';
+import { DataService } from '../services/data.service';
+import { DataServiceStub } from '../services/data.service.stub';
+import { MomentModule } from 'ngx-moment';
 
-describe("UpcomingEventsComponent", () => {
+describe('UpcomingEventsComponent', () => {
   let component: UpcomingEventsComponent;
   let fixture: ComponentFixture<UpcomingEventsComponent>;
 
@@ -23,7 +23,7 @@ describe("UpcomingEventsComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
