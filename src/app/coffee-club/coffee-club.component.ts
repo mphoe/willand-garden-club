@@ -15,14 +15,15 @@ export class CoffeeClubComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.fetchCoffee().subscribe(allTimes => {
-      const momMeetingTimes: moment.Moment[] = allTimes.map((time: string) =>
-        moment(time, "DD/MM/YYYY")
-      );
-      const futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter(time =>
-        time.isAfter()
-      );
-
-      this.nextMeeting = futureMeetingTimes[0];
+      if (allTimes.length > 0) {
+        const momMeetingTimes: moment.Moment[] = allTimes.map((time: string) =>
+          moment(time, "DD/MM/YYYY")
+        );
+        const futureMeetingTimes: moment.Moment[] = momMeetingTimes.filter(
+          time => time.isAfter()
+        );
+        this.nextMeeting = futureMeetingTimes[0];
+      }
     });
   }
 }

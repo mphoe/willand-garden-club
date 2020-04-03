@@ -18,9 +18,7 @@ export class PhotoServiceServiceStub {
    * @returns an array of photos
    */
   public processPhotos(photos: FlickrPhoto[]): Photo[] {
-    return photos.map(photo => {
-      return new Photo("id", "url", "title");
-    });
+    return [{ id: "id", url: "url", title: "title" }];
   }
 
   public getPhotos(config): Observable<FlickrData> {
