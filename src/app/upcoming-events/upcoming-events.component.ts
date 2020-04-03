@@ -1,24 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { UpcomingEvent } from '../upcoming-event';
-import { DataService } from '../services/data.service';
-import moment from 'moment';
+import { Component, OnInit } from "@angular/core";
+import { UpcomingEvent } from "../upcoming-event";
+import { DataService } from "../services/data.service";
+import * as moment from "moment";
+import "moment/moment";
 @Component({
-  selector: 'app-upcoming-events',
-  templateUrl: './upcoming-events.component.html',
-  styleUrls: ['./upcoming-events.component.scss']
+  selector: "app-upcoming-events",
+  templateUrl: "./upcoming-events.component.html",
+  styleUrls: ["./upcoming-events.component.scss"]
 })
 export class UpcomingEventsComponent implements OnInit {
-
   public upcomingEvents: UpcomingEvent[];
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    this.dataService.fetchUpcomingEvents().subscribe((events: UpcomingEvent[]) => {
-      const futureEvents = events.filter(event => moment(event.date, 'DD/MM/YYYY').isAfter());
-      this.upcomingEvents = futureEvents.slice(0, 2);
-
-    });
+    this.dataService
+      .fetchUpcomingEvents()
+      .subscribe((events: UpcomingEvent[]) => {
+        const futureEvents = events.filter(event =>
+          moment(event.date, "DD/MM/YYYY").isAfter()
+        );
+        this.upcomingEvents = futureEvents.slice(0, 2);
+      });
   }
-
 }
