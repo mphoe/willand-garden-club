@@ -18,6 +18,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Angular 9 Upgrade
+
+In order for an ES5 module like moment to work, i had to add the "allowSyntheticDefaultImports" flag to tsconfig.
+
+[This Stack Overflow page explains](https://stackoverflow.com/questions/56238356/understanding-esmoduleinterop-in-tsconfig-file)
+
 ## Docker investigation
 
 [I used this as a guide](https://mherman.org/blog/dockerizing-an-angular-app/)

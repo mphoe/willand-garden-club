@@ -1,8 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { UpcomingEvent } from "../upcoming-event";
 import { DataService } from "../services/data.service";
-import * as moment from "moment";
-import "moment/moment";
+import moment from "moment";
 @Component({
   selector: "app-upcoming-events",
   templateUrl: "./upcoming-events.component.html",
@@ -11,7 +10,7 @@ import "moment/moment";
 export class UpcomingEventsComponent implements OnInit {
   public upcomingEvents: UpcomingEvent[];
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService

@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { UpcomingEvent } from "../upcoming-event";
-import * as moment from "moment";
-import "moment/moment";
+import moment from "moment";
 
 @Component({
   selector: "app-event",
