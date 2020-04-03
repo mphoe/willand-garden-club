@@ -20,6 +20,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Docker investigation
 
+[I used this as a guide](https://mherman.org/blog/dockerizing-an-angular-app/)
+
 ### Development image
 
 Run `docker build -t garden-club:dev .` to use ./Dockerfile to create an image called garden-club:dev
@@ -28,3 +30,9 @@ Run `docker run -d -v ${PWD}:/app -v /app/node_modules -p 4201:4200 --name devCo
 
 You can then test the container by running `docker exec -it devContainer ng test --watch=false`
 and `docker exec -it devContainer ng e2e --port 4202`
+
+### Production Image
+
+Run `docker build -f Dockerfile-prod -t garden-club:prod .` to user ./Dockerfile-prod to create an image called garden-club:prod
+
+Then Run `docker run -d -p 80:80 --name gardenClub --rm garden-club:prod` to start up the container
